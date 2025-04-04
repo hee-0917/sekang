@@ -24,7 +24,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
-            margin-top: 80px;  /* 상단 여백 110px에서 80px로 감소 */
+            margin-top: 90px;  /* 상단 여백 조정 */
         }
         .title-section {
             background: #1a4789;  /* 세강병원 파란색으로 변경 */
@@ -122,8 +122,8 @@
             margin-top: 10px;
         }
         .footer {
-            padding: 40px 15px;
-            margin-top: 30px;
+            padding: 20px 15px;  /* 40px에서 20px로 패딩 감소 */
+            margin-top: 20px;    /* 30px에서 20px로 여백 감소 */
             border-top: 1px solid rgba(0,0,0,0.05);
         }
         .footer-container {
@@ -155,20 +155,20 @@
         }
         .footer-info {
             text-align: center;
-            margin-top: 5px;
-            background: transparent;  /* 배경을 투명하게 설정 */
+            margin-top: 0;  /* 여백 제거 */
+            background: transparent;
         }
         .footer .company-name {
-            font-size: 1.2em;
+            font-size: 1.1em;  /* 1.2em에서 1.1em로 감소 */
             font-weight: bold;
-            margin-bottom: 15px;
-            color: #1a4789;        /* 다시 파란색으로 */
-            margin-top: -5px;
+            margin-bottom: 10px;  /* 15px에서 10px로 감소 */
+            color: #1a4789;
+            margin-top: 0;
         }
         .footer p {
-            color: #333;          /* 다시 진한 회색으로 */
-            margin: 5px 0;
-            font-size: 1em;
+            color: #333;
+            margin: 3px 0;  /* 5px에서 3px로 여백 감소 */
+            font-size: 0.95em;  /* 글자 크기 약간 감소 */
         }
         .footer .tel {
             color: #1a4789;       /* 다시 파란색으로 */
@@ -251,14 +251,14 @@
             background-color: white;
             z-index: 1000;
             box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            padding: 10px 0;  /* 패딩 15px에서 10px로 감소 */
+            padding: 12px 0;  /* 10px에서 12px로 증가 */
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .fixed-logo img {
-            height: 60px;  /* 로고 높이 80px에서 60px로 감소 */
+            height: 66px;  /* 60px에서 66px로 10% 증가 */
             width: auto;
             border: none;
             box-shadow: none;
@@ -373,7 +373,6 @@
     <footer>
         <div class="footer">
             <div class="footer-container">
-                <img src="logo2.png" alt="세강병원 로고" class="footer-logo">
                 <div class="footer-info">
                     <p class="company-name">의료법인 일민의료재단 세강병원</p>
                     <p>주소: 대구 달서구 구마로 220</p>
