@@ -27,21 +27,21 @@
             margin-top: 80px;  /* 상단 여백 조정 */
         }
         .title-section {
-            background: #1a4789;  /* 세강병원 파란색으로 변경 */
-            padding: 35px 15px;
-            margin: -15px -15px 30px -15px;
+            background: #1a4789;
+            padding: 17px 15px;  /* 35px에서 17px로 감소 */
+            margin: -15px -15px 15px -15px;  /* 하단 여백도 30px에서 15px로 감소 */
             position: relative;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* 그림자 효과 추가 */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         }
         h1 {
             text-align: center;
             color: white;
-            font-size: 2.4em;        /* 3.6em에서 2.4em으로 축소 */
-            line-height: 1.5;
+            font-size: 2.4em;  /* 원래 크기 유지 */
+            line-height: 1.2;  /* 줄간격 축소 */
             margin: 0;
             font-family: 'Noto Sans KR', sans-serif;
-            font-weight: 300;        /* 더 가벼운 폰트 웨이트 */
-            letter-spacing: -0.02em; /* 자간 미세 조정 */
+            font-weight: 300;
+            letter-spacing: -0.02em;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
         }
         h1 .highlight {
@@ -92,7 +92,7 @@
                 flex-direction: column;
             }
             h1 {
-                font-size: 2em;
+                font-size: 1em;  /* 2em에서 1em으로 50% 감소 */
             }
             
             h1 span.hospital-name {
@@ -195,18 +195,27 @@
         /* 세강병원 텍스트를 위한 새로운 스타일 */
         .hospital-title {
             display: block;
-            font-size: 1.8em;        /* 상위 텍스트보다 더 크게 */
+            font-size: 1.8em;
             color: white;
-            margin-top: 10px;
-            font-weight: 700;        /* 볼드체 */
-            letter-spacing: 0.02em;  /* 자간 약간 넓게 */
+            margin-top: 5px;  /* 10px에서 5px로 감소 */
+            font-weight: 700;
+            letter-spacing: 0.02em;
             text-shadow: 3px 3px 6px rgba(0,0,0,0.2);
             font-family: 'Noto Sans KR', sans-serif;
         }
         /* 모바일 대응 */
         @media (max-width: 768px) {
+            .title-section {
+                padding: 12px 15px;  /* 모바일에서도 패딩 감소 */
+            }
+            
             .hospital-title {
                 font-size: 1.6em;
+                margin-top: 3px;  /* 모바일에서 여백 더 축소 */
+            }
+            
+            h1 {
+                font-size: 1em;  /* 2em에서 1em으로 50% 감소 */
             }
         }
         /* 부드러운 애니메이션 효과 추가 */
@@ -227,9 +236,10 @@
         /* 상단 문구 스타일 수정 */
         .top-text {
             font-size: 0.7em;
-            font-weight: 600;        /* 더 진하게 변경 */
-            letter-spacing: 0.02em;  /* 자간 살짝 조정 */
-            text-shadow: 2px 2px 4px rgba(0,0,0,0.25); /* 그림자 강화 */
+            font-weight: 600;
+            letter-spacing: 0.02em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
+            margin-bottom: 5px;  /* 여백 축소 */
         }
         .homepage-link {
             color: #1a4789;
