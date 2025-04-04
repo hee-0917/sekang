@@ -28,7 +28,7 @@
         }
         .title-section {
             background: #1a4789;
-            padding: 29px 15px;  /* 22px에서 30% 증가한 29px로 변경 */
+            padding: 22px 15px;  /* 이전 버전의 패딩 */
             margin: -15px -15px 20px -15px;
             position: relative;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -36,7 +36,7 @@
         h1 {
             text-align: center;
             color: white;
-            font-size: 3.84em;  /* 2.4em에서 60% 증가 */
+            font-size: 2.4em;  /* 이전 버전의 크기 */
             line-height: 1.3;
             margin: 0;
             font-family: 'Noto Sans KR', sans-serif;
@@ -92,7 +92,7 @@
                 flex-direction: column;
             }
             h1 {
-                font-size: 3.2em;  /* 모바일에서는 약간 작게 조정 */
+                font-size: 2.6em;  /* 2em에서 30% 증가 */
             }
             
             h1 span.hospital-name {
@@ -195,7 +195,7 @@
         /* 세강병원 텍스트를 위한 새로운 스타일 */
         .hospital-title {
             display: block;
-            font-size: 2.88em;  /* 1.8em에서 60% 증가 */
+            font-size: 1.8em;  /* 이전 버전의 크기 */
             color: white;
             margin-top: 7px;
             font-weight: 700;
@@ -206,16 +206,21 @@
         /* 모바일 대응 */
         @media (max-width: 768px) {
             .title-section {
-                padding: 21px 15px;  /* 16px에서 30% 증가 */
+                padding: 16px 15px;
             }
             
             .hospital-title {
-                font-size: 2.56em;  /* 1.6em에서 60% 증가 */
+                font-size: 2.08em;  /* 1.6em에서 30% 증가 */
                 margin-top: 5px;
             }
             
             h1 {
-                font-size: 3.2em;  /* 모바일에서는 약간 작게 조정 */
+                font-size: 2.6em;  /* 2em에서 30% 증가 */
+            }
+            
+            .top-text {
+                font-size: 0.91em;  /* 0.7em에서 30% 증가 */
+                margin-bottom: 7px;
             }
         }
         /* 부드러운 애니메이션 효과 추가 */
@@ -235,7 +240,7 @@
         }
         /* 상단 문구 스타일 수정 */
         .top-text {
-            font-size: 1.12em;  /* 0.7em에서 60% 증가 */
+            font-size: 0.7em;  /* 이전 버전의 크기 */
             font-weight: 600;
             letter-spacing: 0.02em;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
@@ -352,6 +357,16 @@
             
             .position, .phone {
                 font-size: 0.9em;
+            }
+        }
+        /* 더 작은 모바일 화면에서의 대응 추가 */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2.4em;  /* 아주 작은 화면에서는 약간 축소 */
+            }
+            
+            .hospital-title {
+                font-size: 1.95em;
             }
         }
     </style>
